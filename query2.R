@@ -1,0 +1,1 @@
+q2 <-    "    SELECT Em.FirstName, Em.LastName, AR.ReviewDate, Em.HireDate    FROM Employee As Em    LEFT JOIN AnnualReviews As AR On Em.ID = AR.EmpID    WHERE AR.EmpID IS NULL    ORDER BY Em.HireDate    "sqldf(q2)

@@ -1,0 +1,1 @@
+q3 <-"   SELECT    max(tenure) - min(tenure) As tenure_diff  FROM(    SELECT FirstName, LastName, TerminationDate, HireDate, julianday('now') As todayDate, julianday('now') - HireDate As tenure     FROM Employee    WHERE TerminationDate IS NULL  )"

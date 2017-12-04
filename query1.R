@@ -1,0 +1,1 @@
+q1 <-    "    SELECT FirstName, LastName    FROM Employee    WHERE TerminationDate IS NULL AND LastName LIKE 'Smith%'    ORDER BY LastName, FirstName    "sqldf(q1)
